@@ -8,3 +8,9 @@
 
 [context.deploy-preview]
   command = "yarn build:preview"
+  
+  [[redirects]]
+  from = "https://objective-pike-a47988.netlify.app/*"
+  to = "https://adr.web.id/:splat"
+  status = 301
+  force = true #COMMENT: ensure that we always redirect
